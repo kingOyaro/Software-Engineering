@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://127.0.0.1:8000/admin/blog/post/add/ -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Add post | Django site admin</title>
+<link rel="stylesheet" type="text/css" href="./Add post _ Django site admin_files/base.css">
+<link rel="stylesheet" type="text/css" href="./Add post _ Django site admin_files/forms.css">
+
+
+<script type="text/javascript" src="./Add post _ Django site admin_files/saved_resource"></script>
+<script type="text/javascript" src="./Add post _ Django site admin_files/jquery.js.download"></script>
+<script type="text/javascript" src="./Add post _ Django site admin_files/jquery.init.js.download"></script>
+<script type="text/javascript" src="./Add post _ Django site admin_files/core.js.download"></script>
+<script type="text/javascript" src="./Add post _ Django site admin_files/RelatedObjectLookups.js.download"></script>
+<script type="text/javascript" src="./Add post _ Django site admin_files/actions.js.download"></script>
+<script type="text/javascript" src="./Add post _ Django site admin_files/urlify.js.download"></script>
+<script type="text/javascript" src="./Add post _ Django site admin_files/prepopulate.js.download"></script>
+<script type="text/javascript" src="./Add post _ Django site admin_files/xregexp.js.download"></script>
+
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Add post _ Django site admin_files/responsive.css">
+    
+
+<meta name="robots" content="NONE,NOARCHIVE">
+</head>
+
+
+<body class=" app-blog model-post change-form" data-admin-utc-offset="0">
+
+<!-- Container -->
+<div id="container">
+
+    
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+        
+<h1 id="site-name"><a href="http://127.0.0.1:8000/admin/">Django administration</a></h1>
+
+        </div>
+        
+        
+        <div id="user-tools">
+            
+                Welcome,
+                <strong>dalton</strong>.
+            
+            
+                
+                    <a href="http://127.0.0.1:8000/">View site</a> /
+                
+                
+                    
+                    
+                
+                
+                <a href="http://127.0.0.1:8000/admin/password_change/">Change password</a> /
+                
+                <a href="http://127.0.0.1:8000/admin/logout/">Log out</a>
+            
+        </div>
+        
+        
+        
+    </div>
+    <!-- END Header -->
+    
+<div class="breadcrumbs">
+<a href="http://127.0.0.1:8000/admin/">Home</a>
+› <a href="http://127.0.0.1:8000/admin/blog/">Blog</a>
+› <a href="http://127.0.0.1:8000/admin/blog/post/">Posts</a>
+› Add post
+</div>
+
+    
+
+    
+        
+    
+
+    <!-- Content -->
+    <div id="content" class="colM">
+        
+        <h1>Add post</h1>
+        <div id="content-main">
+
+
+
+<form action="http://127.0.0.1:8000/admin/blog/post/add/" method="post" id="post_form" novalidate=""><input type="hidden" name="csrfmiddlewaretoken" value="zeyvbEnkC3w5Nz1SgSkTzN32hkPBz0nI8q52MSNLGTPZTRYs1x7OYFasJGivsvV0">
+<div>
+
+
+
+
+
+
+
+  <fieldset class="module aligned ">
+    
+    
+    
+        <div class="form-row field-title">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_title">Title:</label>
+                        
+                            <input type="text" name="title" class="vTextField" maxlength="200" required="" id="id_title">
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-slug">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_slug">Slug:</label>
+                        
+                            <input type="text" name="slug" class="vTextField" maxlength="200" required="" id="id_slug">
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-author">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_author">Author:</label>
+                        
+                            <div class="related-widget-wrapper">
+    <select name="author" required="" id="id_author">
+  <option value="" selected="">---------</option>
+
+  <option value="2">journalist1</option>
+
+  <option value="3">journalist2</option>
+
+  <option value="1">kid_untamed</option>
+
+  <option value="4">roy</option>
+
+</select>
+    
+        <a class="related-widget-wrapper-link change-related" id="change_id_author" data-href-template="/admin/auth/user/__fk__/change/?_to_field=id&amp;_popup=1" title="Change selected user" href="http://127.0.0.1:8000/admin/auth/user/2/change/?_to_field=id&amp;_popup=1"><img src="./Add post _ Django site admin_files/icon-changelink.svg" alt="Change"></a><a class="related-widget-wrapper-link add-related" id="add_id_author" href="http://127.0.0.1:8000/admin/auth/user/add/?_to_field=id&amp;_popup=1" title="Add another user"><img src="./Add post _ Django site admin_files/icon-addlink.svg" alt="Add"></a>
+    
+</div>
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-content">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_content">Content:</label>
+                        
+                            <textarea name="content" cols="40" rows="10" class="vLargeTextField" required="" id="id_content"></textarea>
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-status">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_status">Status:</label>
+                        
+                            <select name="status" id="id_status">
+  <option value="0" selected="">Draft</option>
+
+  <option value="1">Publish</option>
+
+</select>
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="submit-row">
+
+<input type="submit" value="Save" class="default" name="_save">
+
+
+<input type="submit" value="Save and add another" name="_addanother">
+<input type="submit" value="Save and continue editing" name="_continue">
+
+
+</div>
+
+
+
+    <script type="text/javascript" id="django-admin-form-add-constants" src="./Add post _ Django site admin_files/change_form.js.download" data-model-name="post">
+    </script>
+
+
+
+
+<script type="text/javascript" id="django-admin-prepopulated-fields-constants" src="./Add post _ Django site admin_files/prepopulate_init.js.download" data-prepopulated-fields="[{&quot;id&quot;: &quot;#id_slug&quot;, &quot;name&quot;: &quot;slug&quot;, &quot;dependency_ids&quot;: [&quot;#id_title&quot;], &quot;dependency_list&quot;: [&quot;title&quot;], &quot;maxLength&quot;: 200, &quot;allowUnicode&quot;: false}]">
+</script>
+
+
+</div>
+</form></div>
+
+        
+        <br class="clear">
+    </div>
+    <!-- END Content -->
+
+    <div id="footer"></div>
+</div>
+<!-- END Container -->
+
+
+
+</body></html>
